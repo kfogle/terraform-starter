@@ -12,11 +12,8 @@ resource "spacelift_stack" "managed" {
   labels     = ["managed", "depends-on:${data.spacelift_current_stack.this.id}"]
 
   dynamic "github_enterprise" {
-    for_each = var.github_app_namespace != null ? [1] : []
-    content {
-      namespace = var.github_app_namespace
-      id = '1238279'
-    }
+      namespace = "KFOGLE"
+      id = "1238279"
   }
 
 }
