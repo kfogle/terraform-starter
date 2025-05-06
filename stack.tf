@@ -15,6 +15,7 @@ resource "spacelift_stack" "managed" {
     for_each = var.github_app_namespace != null ? [1] : []
     content {
       namespace = var.github_app_namespace
+      id = '1238279'
     }
   }
 
