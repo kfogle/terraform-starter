@@ -13,7 +13,6 @@ resource "spacelift_stack" "managed" {
 
   github_enterprise {
       namespace = "KFOGLE"
-      id = "1238279"
   }
 
 }
