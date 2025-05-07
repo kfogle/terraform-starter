@@ -10,6 +10,10 @@ resource "spacelift_stack" "managed" {
 
   autodeploy = true
   labels     = ["managed", "depends-on:${data.spacelift_current_stack.this.id}"]
+  github_enterprise {
+       namespace = "kfogle"
+       id = "1238279"
+   }
 
 }
 
